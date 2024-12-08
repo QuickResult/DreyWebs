@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #063c46;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    background-color: rgba(48, 116, 123, 0.974);
+    color: white;
+    padding: 20px 0;
+    overflow: hidden; 
+}
+
+header .logo {
+    width: 90px; 
+    height: 90px; 
+    float: left;
+    margin-left: 20px;
+    border-radius: 100px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-right: 10%;
+    text-shadow: 1px 1px 25px whitesmoke, 0 0 10px aliceblue, 0 0 10px azure;
+}
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+nav {
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .main-nav {
+    display: flex;
+    list-style: none;
+}
+
+nav .main-nav li {
+    margin: 0 15px;
+}
+
+nav .main-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav .main-nav li a:hover {
+    color: aquamarine;
+}
+
+nav .logout-nav {
+    list-style: none;
+}
+
+nav .logout-nav li {
+    margin-left: 20px;
+}
+
+nav .logout-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+nav .logout-nav li a:hover {
+    background-color: #063c46;
+}
+
+#home {
+    background-color: #063c46;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: aqua;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: aqua;
+}
+
+#about {
+    background-color: #063c46;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: aqua;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: aqua;
+}
+
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+label {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.converter {
+    max-width: 400px;
+    margin: 10 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#numberconverter {
+    color: aqua;
+}
+
+#converter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sample-table {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+    color: aqua;
+    display: flex;
+    align-items: center;
+}
+
+.sample-table:hover {
+    color: #4a4a8a;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: rgba(48, 116, 123, 0.974);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav .main-nav {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    nav .logout-nav {
+        margin-top: 10px;
+    }
+}
